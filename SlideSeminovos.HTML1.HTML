@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="53">
+    <title>Slideshow Seminovos</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            background-color: #f8f8f8;
+        }
+        
+        .galeria {
+            /*margem*/
+            margin: 15px auto;
+            /*largura*/
+            width: 1366px;
+            /*altura*/
+            height: 738px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .foto {
+            position: absolute;
+            opacity: 0;
+            animation-name: animacao;
+            animation-duration: 54s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes animacao {
+            3% {
+                opacity: 1;
+                transform: scale(1.0, 1.0);
+            }
+            30% {
+                opacity: 0;
+            }
+        }
+        
+        .foto:nth-child(1) {
+            animation-delay: 0s;
+        }
+        
+        .foto:nth-child(2) {
+            animation-delay: 8s;
+        }
+        
+        .foto:nth-child(3) {
+            animation-delay: 14s;
+        }
+        
+        .foto:nth-child(4) {
+            animation-delay: 21s;
+        }
+        
+        .foto:nth-child(5) {
+            animation-delay: 28s;
+        }
+        
+        .foto:nth-child(6) {
+            animation-delay: 36s;
+        }
+        
+        .foto:nth-child(7) {
+            animation-delay: 43s;
+        }
+        
+        .foto:nth-child(8) {
+            animation-delay: 50s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="galeria">
+        <img class="foto" src="img/Dash1.jpg" />
+        <img class="foto" src="IMG/Dash2.jpg" />
+        <img class="foto" src="IMG/Dash3.jpg" />
+        <img class="foto" src="IMG/Dash4.jpg" />
+        <img class="foto" src="IMG/Dash5.jpg" />
+        <img class="foto" src="IMG/Dash6.jpg" />
+        <img class="foto" src="IMG/Dash7.jpg" />
+        <img class="foto" src="IMG/Dash8.jpg" />
+
+
+
+    </section>
+</body>
+
+</html>
